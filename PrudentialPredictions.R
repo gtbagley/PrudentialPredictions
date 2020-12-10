@@ -6,8 +6,8 @@ library(DataExplorer)
 library(caret)
 library(RANN)
 
-train <- read.csv("/Users/griffinbagley/Documents/STAT 495R/prudential/prudential-life-insurance-assessment/train.csv")
-test <- read.csv("/Users/griffinbagley/Documents/STAT 495R/prudential/prudential-life-insurance-assessment/test.csv")
+train <- read.csv("./train.csv")
+test <- read.csv("./test.csv")
 
 ## Combine sets to clean both simultaneously
 combined <- bind_rows(train=train, test=test, .id="Set")

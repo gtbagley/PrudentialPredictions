@@ -1,4 +1,4 @@
-#### Prudential
+#### Prudential Kaggle Competition
 
 ## Libraries I Need
 library(tidyverse)
@@ -98,4 +98,4 @@ preds <- replace(preds, preds<1, 1)
 
 ## Create submission dataframe and write it to a csv
 xgb.preds <- data.frame(Id=id, Response=preds)
-write_csv(x=xgb.preds, path="./xgb3.csv")
+write_csv(x=xgb.preds, path="./xgb.csv")
